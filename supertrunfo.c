@@ -15,7 +15,7 @@ int main (){
         unsigned long int populacao2;
         float area2, pib2, densidade2 = 0, percapita2 = 0, superpoder2;
 
-        int atributoescolhido;
+        int atributoescolhido1, atributoescolhido2;
         
 //Coloque as informações da primeira carta
         printf("Você está preenchendo as informações da PRIMEIRA carta!\n");
@@ -144,9 +144,23 @@ int main (){
         printf("6. PIB per Capita\n");
         printf("7. Super-Poder\n");
         printf("--> ");
-        scanf("%d", &atributoescolhido);
+        scanf("%d", &atributoescolhido1);
 
-        switch (atributoescolhido)
+        printf("\nESCOLHA OUTRO ATRIBUTO PARA COMPARAR (Não poderá ser o mesmom atributo selecionado anteriormente):\n");
+        printf("1. População\n");
+        printf("2. Área\n");
+        printf("3. PIB\n");
+        printf("4. Pontos Turísticos\n");
+        printf("5. Densidade Populacional\n");
+        printf("6. PIB per Capita\n");
+        printf("7. Super-Poder\n");
+        printf("--> ");
+        scanf("%d", &atributoescolhido2);
+
+        if (atributoescolhido2 == atributoescolhido1){
+                printf("Você escolheu dois atributos iguais. Reinicie o programa\n")
+        } else if
+        switch (atributoescolhido1)
         {
         case 1:
                 if (populacao1 > populacao2){
