@@ -206,18 +206,18 @@ int main (){
 
         if (soma_carta1 > soma_carta2) {
         printf("Resultado: Carta 1 (%s) venceu! Com %.2f pontos.\n", cidade1, soma_carta1);
-        printf("Valor atributo 1: %.2f", valor1_carta1);
-        printf("Valor atributo 2: %.2f", valor2_carta1);
+        printf("Valor atributo 1: %.2f\n", valor1_carta1);
+        printf("Valor atributo 2: %.2f\n", valor2_carta1);
 
         }
         else if (soma_carta2 > soma_carta1) {
         printf("Resultado: Carta 2 (%s) venceu! Com %.2f pontos.\n", cidade2, soma_carta2);
-        printf("Valor atributo 1: %.2f", valor1_carta2);
-        printf("Valor atributo 2: %.2f", valor2_carta2);
+        printf("Valor atributo 1: %.2f\n", valor1_carta2);
+        printf("Valor atributo 2: %.2f\n", valor2_carta2);
         }
         else {
         printf("Resultado: Empate!\n");
-        printf("Pontuação de ambas as cartas: %.2f", soma_carta1);
+        printf("Pontuação de ambas as cartas: %.2f\n", soma_carta1);
     }
 
 //Conclua o programa com sucesso
